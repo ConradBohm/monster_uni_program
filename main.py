@@ -4,7 +4,7 @@ from workshop_func import *
 from room_func import *
 
 
-print('---///--- Monster University Program ---\\\\\\---\n\n')
+print('\n---///--- Monster University Program ---\\\\\\---\n\n')
 
 # Main loop of the program. Contains the base menu and exit functionality
 while True:
@@ -19,11 +19,10 @@ while True:
 
     # Numbers relate to the menu options. Functions called are sub-menus
     if choice == 1:
-        pass
         students()
     elif choice == 2:
         print('Not in operation yet.')
-#        rooms()
+#       rooms()
     elif choice == 3:
         workshops()
     elif choice == 4:
