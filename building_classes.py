@@ -30,7 +30,7 @@ class SpookyWorkshop:
         self.subject = subject
         self.teacher = teacher
         self.student_list = []
-        self.room_number = room
+        self.theatre = room
 
     def add_student(self, student):
         self.student_list.append(student)

@@ -9,6 +9,14 @@ class Monster:
         self.skills.append(skill)
 
 
+class PeopleList:
+    def __init__(self):
+        self.people_list = []
+
+    def add_student(self, person):
+        self.people_list.append(person)
+
+
 class Student(Monster):
     def __init__(self, name, legs, colour, student_id, grade):
         super().__init__(name, legs, colour)

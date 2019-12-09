@@ -1,6 +1,5 @@
 from functions import *
 from teachers_func import *
-from finish_func import *
 from workshop_func import *
 from room_func import *
 
@@ -23,16 +22,14 @@ while True:
         pass
         students()
     elif choice == 2:
-        pass
+        print('Not in operation yet.')
 #        rooms()
     elif choice == 3:
-        pass
-#        workshops()
+        workshops()
     elif choice == 4:
-        pass
-#        staff()
+        staff()
     elif choice == 5:
-#        finish()
+        print('Thank you for using this program!')
         break
     # Else to return to the top of the loop if user didn't use a number 1-5
     else:
