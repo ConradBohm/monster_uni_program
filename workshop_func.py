@@ -34,7 +34,7 @@ def view_workshop():
             print(f'Subject: {workshop.subject}\n'
                   f'Teacher: {workshop.teacher.name}\n'
                   f'Room: {workshop.theatre.room_number}\n'
-                  f'Students: {workshop.student_list}')
+                  f'Students: {workshop.list_of_students()}')
             found = True
             break
         else:
@@ -52,7 +52,7 @@ def workshop_list():
 def add_student():
     found = False
     check = input('Which workshop do you wish to add a student to? ').lower()
-    stud = input('Who is the student you wish to add? ')
+    stud = input('Who is the student you wish to add? ').lower()
     for workshop in work_list:
         if check in workshop.subject.lower():
             for student in stud_list.people_list:
@@ -63,6 +63,7 @@ def add_student():
             break
 
         else:
+            print('tick')
             continue
 
     if not found:
