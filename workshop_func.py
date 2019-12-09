@@ -63,7 +63,7 @@ def add_student():
             break
 
         else:
-            print('tick')
+#           print('tick') debugging
             continue
 
     if not found:

@@ -35,3 +35,10 @@ class SpookyWorkshop:
     def add_student(self, student):
         self.student_list.append(student)
 
+    def list_of_students(self):
+        generated_list = []
+        for student in self.student_list:
+            generated_list.append(student.name)
+
+        return generated_list
+

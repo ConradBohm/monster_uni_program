@@ -1,4 +1,5 @@
 class Monster:
+
     def __init__(self, name, legs, colour):
         self.name = name
         self.skills = []
@@ -18,6 +19,7 @@ class PeopleList:
 
 
 class Student(Monster):
+
     def __init__(self, name, legs, colour, student_id, grade):
         super().__init__(name, legs, colour)
         self.id = student_id
