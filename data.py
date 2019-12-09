@@ -24,3 +24,13 @@ lecture_2 = LectureTheatre('Main Campus', 20)
 # Workshop List
 scaring = SpookyWorkshop('Scaring', j_johnson, lecture_1)
 spook_science = SpookyWorkshop('Spook Science', m_rampling, lecture_2)
+
+def menu_input():
+    while True:
+        try:
+            choice = int(input('Pick a number from the menu options: '))
+            break
+        except ValueError:
+            print('\nNot a valid number, try again with a number digit from the menu.')
+
+    return choice

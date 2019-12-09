@@ -1,4 +1,9 @@
 from functions import *
+from teachers_func import *
+from finish_func import *
+from workshop_func import *
+from room_func import *
+
 
 print('---///--- Monster University Program ---\\\\\\---\n\n')
 
@@ -11,17 +16,12 @@ while True:
           '5 -- Exit\n')
 
     # Error handling, make sure user enters a number
-    while True:
-        try:
-            choice = int(input('Pick a number from the menu options: '))
-            break
-        except ValueError:
-            print('\nNot a valid number, try again with a number digit from the menu.')
+    choice = menu_input()
 
     # Numbers relate to the menu options. Functions called are sub-menus
     if choice == 1:
         pass
-#        students()
+        students()
     elif choice == 2:
         pass
 #        rooms()

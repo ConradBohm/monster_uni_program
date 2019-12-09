@@ -1,0 +1,2 @@
+def rooms():
+    pass

@@ -1,0 +1,2 @@
+def workshops():
+    pass
